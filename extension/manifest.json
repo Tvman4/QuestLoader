@@ -2,13 +2,29 @@
   "manifest_version": 3,
   "name": "QuestLoader",
   "version": "1.5.2",
+  "description": "Custom Quest binary downloader extension.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.meta.com/*",
+    "https://*.oculus.com/*"
+  ],
+  "background": {
+    "service_worker": "CookieMonster.js"
+  },
   "content_scripts": [
     {
       "matches": [
-        "https://*.meta.com/*",
-        "https://*.oculus.com/*"
+        "https://*.meta.com/experiences/*",
+        "https://*.oculus.com/experiences/*"
       ],
       "js": [
+        "content.js",
         "QuestLoader.js"
       ]
     }
