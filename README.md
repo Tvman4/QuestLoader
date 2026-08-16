@@ -14,19 +14,19 @@
 
 ---
 
-## Automated Build Process
+## Download
 
-This repository includes a GitHub Actions workflow (`.github/workflows/build.yml`) that automatically packages the extension on every push.
-
-1. Navigate to the **Actions** tab of your repository.
-2. Select the latest successful build run.
-3. Download the **QuestLoader-zip** artifact from the bottom of the summary page.
+* **Chrome Web Store:** Coming soon
+* **Manual Installation (via GitHub Actions):**
+  1. Navigate to the **Actions** tab of this repository.
+  2. Select the latest successful build run.
+  3. Download the **QuestLoader-zip** artifact from the bottom of the summary page.
 
 ---
 
 ## Manual Installation Guide
 
-1. Download and extract the **QuestLoader-zip** artifact.
+1. Download and extract the **QuestLoader-zip** artifact (or clone this repository).
 2. Open Google Chrome and type `chrome://extensions/` into the URL bar.
 3. Enable **Developer mode** using the toggle switch in the top-right corner.
 4. Click **Load unpacked** in the top-left corner.
