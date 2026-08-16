@@ -1,25 +1,16 @@
 {
   "manifest_version": 3,
   "name": "QuestLoader",
-  "version": "1.0",
-  "description": "Custom Quest binary downloader.",
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "downloads",
-    "cookies"
-  ],
-  "host_permissions": [
-    "https://*.meta.com/*",
-    "https://*.oculus.com/*"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "version": "1.5.2",
   "content_scripts": [
     {
-      "matches": ["https://*.meta.com/experiences/*"],
-      "js": ["content.js"]
+      "matches": [
+        "https://*.meta.com/*",
+        "https://*.oculus.com/*"
+      ],
+      "js": [
+        "QuestLoader.js"
+      ]
     }
   ]
 }
