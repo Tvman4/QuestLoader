@@ -9,7 +9,6 @@
 ## Features
 
 * **UI Integration:** Automatically injects download tools directly into Meta Store experience pages.
-* **Automated Builds:** Utilizes GitHub Actions to build and package clean extension releases.
 * **Open Source:** Fully inspectable source code for privacy and transparency.
 
 ---
@@ -17,20 +16,16 @@
 ## Download
 
 * **Chrome Web Store:** Coming soon
-* **Manual Installation (via GitHub Actions):**
-  1. Navigate to the **Actions** tab of this repository.
-  2. Select the latest successful build run.
-  3. Download the **QuestLoader-zip** artifact from the bottom of the summary page.
 
 ---
 
 ## Manual Installation Guide
 
-1. Download and extract the **QuestLoader-zip** artifact (or clone this repository).
+1. Clone or download the source code from this repository.
 2. Open Google Chrome and type `chrome://extensions/` into the URL bar.
 3. Enable **Developer mode** using the toggle switch in the top-right corner.
 4. Click **Load unpacked** in the top-left corner.
-5. Select the extracted `extension` folder containing the `manifest.json` file.
+5. Select the local `extension` folder containing the `manifest.json` file.
 
 ---
 
