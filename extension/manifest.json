@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "QuestLoader",
+  "version": "1.0",
+  "description": "Download free APK binaries directly from the Meta Store",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.meta.com/*",
+    "https://*.oculus.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.meta.com/experiences/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
