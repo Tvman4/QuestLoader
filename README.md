@@ -19,15 +19,5 @@
 
 ---
 
-## Manual Installation Guide
-
-1. Clone or download the source code from this repository.
-2. Open Google Chrome and type `chrome://extensions/` into the URL bar.
-3. Enable **Developer mode** using the toggle switch in the top-right corner.
-4. Click **Load unpacked** in the top-left corner.
-5. Select the local `extension` folder containing the `manifest.json` file.
-
----
-
 ## Sideloading Notice
 Downloaded `.apk` files are meant for standalone Quest headsets. To install them onto a physical device, use an ADB-based sideloading tool such as **SideQuest**.
