@@ -2,14 +2,15 @@
   "manifest_version": 3,
   "name": "QuestLoader",
   "version": "1.0",
-  "description": "Download free APK binaries directly from the Meta Store",
+  "description": "Custom Quest binary downloader.",
   "permissions": [
-    "storage",
     "activeTab",
-    "scripting"
+    "scripting",
+    "downloads",
+    "cookies"
   ],
   "host_permissions": [
-    "https://www.meta.com/*",
+    "https://*.meta.com/*",
     "https://*.oculus.com/*"
   ],
   "background": {
@@ -17,7 +18,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.meta.com/experiences/*"],
+      "matches": ["https://*.meta.com/experiences/*"],
       "js": ["content.js"]
     }
   ]
