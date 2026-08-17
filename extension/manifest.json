@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "QuestLoader",
-  "version": "1.5.2",
+  "version": "release",
   "description": "Custom Quest binary downloader extension.",
   "permissions": [
     "activeTab",
