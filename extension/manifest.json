@@ -24,7 +24,6 @@
         "https://*.oculus.com/experiences/*"
       ],
       "js": [
-        "content.js",
         "QuestLoader.js"
       ]
     }
