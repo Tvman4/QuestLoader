@@ -1,0 +1,127 @@
+.questloader-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+  display: flex;
+  gap: 10px;
+  background: rgba(17, 17, 17, 0.85);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  cursor: grab;
+}
+
+.questloader-button-container.dragging {
+  cursor: grabbing;
+}
+
+.custom-button, .custom-floating-button {
+  background: #0066ff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.custom-button:hover, .custom-floating-button:hover {
+  background: #0052cc;
+}
+
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.7);
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.custom-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.custom-close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.custom-close-button:hover {
+  color: #fff;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+}
+
+.list-item-info {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item-info span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.dropdown {
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.progress-indicator-background {
+  width: 100%;
+  background: #333;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.progress-indicator {
+  height: 100%;
+  background: #0066ff;
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+.no-dlc-message {
+  padding: 10px 0;
+  color: #888;
+  text-align: center;
+}
+
+.custom-link {
+  color: #3b82f6;
+  text-decoration: underline;
+}
